@@ -14,6 +14,11 @@ Servo fingerServos[5] = {indexFinger, middleFinger, ringFinger, pinkieFinger, th
 int interval = 2;
 int delay_interval = 10;
 
+//init potentiometer
+int potentiometer_pin = 0;
+int value_poteniometer;
+
+
 //function to run each Servo
 void contractFinger(Servo fingerObject, bool directionOpposite = false, int startTurn = 0, int endTurn = 180) {
   if (directionOpposite) {
